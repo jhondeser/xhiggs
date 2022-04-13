@@ -1,0 +1,58 @@
+mixin abilities (img,tittle,text)
+  .abilities-images
+    .container_img
+      img.abilitie-img(src=""+img)
+    .continer_tittle 
+      h4.abilitie-tittle=tittle
+    .container_text 
+      p.abilitie-text=text
+
+mixin learning_path (img, tittle,text,img2)
+  .learning_path-mixin
+    .learning_path-left
+      .container_learning_path-tittle
+        h3.learning_path-tittle=tittle
+      .container_learning_path-text
+        .path-text_container
+          p.learning_path-text=text
+        .path-img_container
+          img(src=""+img2)
+    .learning_path-right
+      .container_learning_path-img 
+        img.abilitie-img(src=""+img)
+
+mixin learning_path2 (img, tittle,text)
+  .learning_path-mixin
+    .learning_path-left2
+      .container_learning_path-img 
+        img.abilitie-img(src=""+img)
+    .learning_path-right
+      .container_learning_path-tittle
+        h3.learning_path-tittle=tittle
+      .container_learning_path-text
+        .path-text_container
+          p.learning_path-text=text
+
+mixin objetives_abilities (tittle, img1, el1,el2,el3,el4,el5, img2)
+  .container_obj-abilities
+    .obj-abilities_tittle
+      h3=tittle
+    .obj-abilities_contend
+      .contend_letf
+        img.letf-img(src=""+img1)
+      .contend_right 
+        ul.right_list
+          li=el1
+          li=el2
+          li=el3
+          li=el4
+          li=el5
+  img.rel-img(src=""+img2)
+
+mixin benefits-box (img, text)
+  .Benefits-box
+    .box_img
+      img(src=""+img)
+    .box_text 
+      p=text 
+

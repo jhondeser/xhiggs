@@ -1,0 +1,126 @@
+extends ./components/layout
+
+block content
+  .principal_container
+    .sitecontainer 
+      section
+        .container_presentation
+          .presentation
+            .presentation_left
+              .container_presentation-tittle
+                h1.presentation-tittle La solución efectiva para que los niños aprovechen su tiempo en pantalla
+              .container_presentation-text
+                p.presentation-text Proyectos de aprendizaje interdisciplinar por medio de videojuegos 
+                  |para niños entre los 5 y 13 años
+              .container_button.presentation_button
+                button.steam_button Quiero participar
+            .presentation_right
+              img(src="/images/imgPresentation.svg")
+      section
+        .container_abilities
+          .container_abilities-tittle
+            h3.abilities-tittle Potenciamos las habilidades particulares de cada niño/a a través del juego
+          .container_abilities-images
+            +abilities("/images/gameAbilitie.svg",
+                       "Aprendizaje basado en juegos",
+                       "Despertamos la curiosidad por el conocimiento a través de la actividad favorita de los niños: ¡Jugar!")
+            +abilities("/images/creativityAbilitie.svg",
+                       "Ponteciamos la creatividad",
+                       "Cada estudiante crea sus propios mundos dentro del videojuego, el límite es la ¡imaginación!")
+            +abilities("/images/steamAbilitie.svg",
+                       "Metodología STEAM",
+                       "Fortalecemos los conocimientos en Ciencias, tecnología, ingeniería, arte y matemáticas")
+          .container_button
+            button.steam_button Registrarme
+      section 
+        .container_learning-path
+          .learning-path
+            .learning-path_tittle
+              h3.path_tittle Aprendizaje diseñado para una era digital
+              h3.path_tittle ¿Como funciona?
+            .learning-path_img
+              +learning_path("/images/learningPath1.png",
+                            "Entrenamos compentencias",
+                            "Creamos hipótesis de problemáticas y situaciones cercanas a la vida real dentro del entorno inmersivo del videojuego","")
+              +learning_path2("/images/learningPath2.png",
+                              "Desarrollamos habilidades creativas",
+                              "Guiamos al estudiante en un proceso ideación para crear soluciones en base a la tecnología.")
+              +learning_path("/images/learningPath3.png",
+                            "Creamos líneas de código",
+                            "Enseñamos al estudiante a programar esas soluciones que generen impacto dentro dentro de sus mundos","")
+              +learning_path("/images/learningPath4.png",
+                            "Descubrimos tus destrezas",
+                            "Cada proyecto tiene como resultado un mundo completo del cuál habrá desarrollado diferentes áreas del saber para su creación",
+                            "/images/steamPath.png")
+      section 
+        .container_info-courses
+          .info-courses_container
+            .info-courses-left
+              .info-courses_tittle
+                h2.courses_tittle Crea, personaliza y comparte
+              .info-courses_text
+                p.courses_text Brindamos módulos de aprendizaje adaptativo para explorar 
+                              |él potencial individual de cada estudiante y así personalizar 
+                              |y guiar su proceso de aprendizaje según sus habilidades individuales
+              .general-info_container
+                .general-info_tittle
+                  h4.info_tittle Información general
+                .general-info_courses
+                  .courses_duration
+                    p Duración:
+                    p 20 Clases
+                  .courses_horary
+                    p Horarios:
+                    p Martes y jueves de 5:30 p.m a 7:00 p.m
+                    p Miercoles y viernes de 5:00 p.m a 6:30p.m
+            .info-courses-right
+              img(src="/images/infoCourse.svg")
+          .info-courses-button_container 
+            button.steam_button Quiero una clase gratis
+      section 
+        .container_objetives
+          .container_objetives-tittle
+            h3.objetives-tittle Nuestro obejtivo es que cada niño/a desarrolle habilidades para la vida
+          .container_objetives-abilities 
+            +objetives_abilities("Habilidades Blandas",
+                                 "/images/softSkills.svg",
+                                 "Resolución de probelmas",
+                                 "Trabajo en equipo",
+                                 "Toma de desiciones",
+                                 "Adaptabilidad",
+                                 "Comunicación",
+                                 "/images/olki.svg")
+            +objetives_abilities("Habilidades Duras",
+                                  "/images/hardSkills.svg",
+                                  "Lenguajes de programación",
+                                  "Lógica matemática",
+                                  "Proyectos STEAM",
+                                  "Aprendizaje integral",
+                                  "y significativo",
+                                  "/images/olp.svg")
+      section 
+        .container_benefits
+          .benefits_section
+            .container_benefits-tittle
+              h3.benefits-tittle ¿Qué beneficios obtienes?
+            .container_benefits-box
+              +benefits-box("/images/humanBen.svg","Contectate con estudiantes de todo el mundo")
+              +benefits-box("/images/clockBen.svg","Crea proyectos a tu propio ritmo")  
+              +benefits-box("/images/medalBen.svg","Clases en vivo con profesores expertos en tecnología")
+              +benefits-box("/images/musicBen.svg","Personaliza tu aprendizaje")
+              +benefits-box("/images/docBen.svg","Material extracurricular para trabajar en casa")
+      section
+        .container_docent
+          .docent
+            .container_docent_info
+              .info_docent-tittle
+                h2.docent-tittle ¿Eres Docente?
+              .info_docent-text
+                p.docent-text Formamos a docentes en el uso de TIC para el aula y en metodologías STEAM
+              .info_docent-button
+                button.docent-button.steam_button Unirme a una sesión informativa
+            .container_footer
+              .container_docent_img
+                  img(src="/images/docent.svg")
+              
+
