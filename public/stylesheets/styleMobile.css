@@ -84,26 +84,6 @@ header h2 {
   margin-bottom: 25px;
 }
 
-.steam_button {
-  background: #FFA300;
-  border-radius: 80px;
-  border: 1px solid #FFA300;
-  padding: 13px 60px 13px 60px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 15px;
-}
-
-.steam_button:hover {
-  -webkit-transform:scale(1.25);
--moz-transform:scale(1.25);
--ms-transform:scale(1.25);
--o-transform:scale(1.25);
-transform:scale(1.25);
-}
-
 .presentation_right {
   width: 80%;
   margin: 0 auto;
@@ -202,6 +182,9 @@ transform:scale(1.25);
 
 .learning-path_img {
   width: 90%;
+  background-image: url(../images/rute.png);
+  background-size: 100% 83%;
+  background-repeat: no-repeat;
   margin: 0 auto;
   padding: 20px;
   background: white;
@@ -503,19 +486,6 @@ transform:scale(1.25);
 .info_docent-button {
   width: 100%;
   margin: 0 auto;
-}
-
-.docent-button {
-  background: #FFA300;
-  border-radius: 80px;
-  border: 1px solid #FFA300;
-  padding: 13px 20px 13px 20px;
-  font-family: var(--leeter);
-  color: white;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  margin-top: 25px;
 }
 
 .container_docent_img {

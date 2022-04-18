@@ -6,15 +6,22 @@ block content
       section
         .container_presentation
           .presentation
-            .presentation_left
+            .presentation_left(data-aos="fade-right" 
+                               data-aos-offset="400"
+                               data-aos-easing="ease-in-sine")
               .container_presentation-tittle
-                h1.presentation-tittle La solución efectiva para que los niños aprovechen su tiempo en pantalla
+                h1.presentation-tittle
+                  |La solución efectiva para que los niños aprovechen su tiempo en pantalla
               .container_presentation-text
                 p.presentation-text Proyectos de aprendizaje interdisciplinar por medio de videojuegos 
                   |para niños entre los 5 y 13 años
               .container_button.presentation_button
-                button.steam_button Quiero participar
-            .presentation_right
+                button.steam_button 
+                  span  Quiero participar
+                  .liquid
+            .presentation_right(data-aos="fade-left"
+                                data-aos-offset="400"
+                                data-aos-easing="ease-in-sine")
               img(src="/images/imgPresentation.svg")
       section
         .container_abilities
@@ -31,7 +38,9 @@ block content
                        "Metodología STEAM",
                        "Fortalecemos los conocimientos en Ciencias, tecnología, ingeniería, arte y matemáticas")
           .container_button
-            button.steam_button Registrarme
+            button.steam_button
+              span  Registrarme
+              .liquid
       section 
         .container_learning-path
           .learning-path
@@ -39,19 +48,23 @@ block content
               h3.path_tittle Aprendizaje diseñado para una era digital
               h3.path_tittle ¿Como funciona?
             .learning-path_img
-              +learning_path("/images/learningPath1.png",
-                            "Entrenamos compentencias",
-                            "Creamos hipótesis de problemáticas y situaciones cercanas a la vida real dentro del entorno inmersivo del videojuego","")
-              +learning_path2("/images/learningPath2.png",
-                              "Desarrollamos habilidades creativas",
-                              "Guiamos al estudiante en un proceso ideación para crear soluciones en base a la tecnología.")
-              +learning_path("/images/learningPath3.png",
-                            "Creamos líneas de código",
-                            "Enseñamos al estudiante a programar esas soluciones que generen impacto dentro dentro de sus mundos","")
-              +learning_path("/images/learningPath4.png",
-                            "Descubrimos tus destrezas",
-                            "Cada proyecto tiene como resultado un mundo completo del cuál habrá desarrollado diferentes áreas del saber para su creación",
-                            "/images/steamPath.png")
+              .learning(data-aos="flip-up" data-aos-duration="3000" data-aos-easing="ease-out-cubic")
+                +learning_path("/images/learningPath1.png",
+                              "Entrenamos compentencias",
+                              "Creamos hipótesis de problemáticas y situaciones cercanas a la vida real dentro del entorno inmersivo del videojuego","")
+              .learning(data-aos="flip-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic")  
+                +learning_path2("/images/learningPath2.png",
+                                "Desarrollamos habilidades creativas",
+                                "Guiamos al estudiante en un proceso ideación para crear soluciones en base a la tecnología.")
+              .learning(data-aos="fade-down" data-aos-duration="3000" data-aos-easing="ease-out-cubic")
+                +learning_path("/images/learningPath3.png",
+                              "Creamos líneas de código",
+                              "Enseñamos al estudiante a programar esas soluciones que generen impacto dentro dentro de sus mundos","")
+              .learning(data-aos="fade-up" data-aos-duration="3000" data-aos-easing="ease-out-cubic")  
+                +learning_path("/images/learningPath4.png",
+                              "Descubrimos tus destrezas",
+                              "Cada proyecto tiene como resultado un mundo completo del cuál habrá desarrollado diferentes áreas del saber para su creación",
+                              "/images/steamPath.png")
       section 
         .container_info-courses
           .info-courses_container
@@ -73,31 +86,39 @@ block content
                     p Horarios:
                     p Martes y jueves de 5:30 p.m a 7:00 p.m
                     p Miercoles y viernes de 5:00 p.m a 6:30p.m
-            .info-courses-right
+            .info-courses-right(data-aos="fade-up-left" data-aos-duration="1500")
               img(src="/images/infoCourse.svg")
           .info-courses-button_container 
-            button.steam_button Quiero una clase gratis
+            button.steam_button
+              span  Quiero una clase gratis
+              .liquid
       section 
         .container_objetives
           .container_objetives-tittle
             h3.objetives-tittle Nuestro obejtivo es que cada niño/a desarrolle habilidades para la vida
-          .container_objetives-abilities 
-            +objetives_abilities("Habilidades Blandas",
-                                 "/images/softSkills.svg",
-                                 "Resolución de probelmas",
-                                 "Trabajo en equipo",
-                                 "Toma de desiciones",
-                                 "Adaptabilidad",
-                                 "Comunicación",
-                                 "/images/olki.svg")
-            +objetives_abilities("Habilidades Duras",
-                                  "/images/hardSkills.svg",
-                                  "Lenguajes de programación",
-                                  "Lógica matemática",
-                                  "Proyectos STEAM",
-                                  "Aprendizaje integral",
-                                  "y significativo",
-                                  "/images/olp.svg")
+          .container_objetives-abilities
+            .container_abilities(data-aos="fade-down"
+                                 data-aos-easing="linear"
+                                 data-aos-duration="1500")
+              +objetives_abilities("Habilidades Blandas",
+                                  "/images/softSkills.svg",
+                                  "Resolución de probelmas",
+                                  "Trabajo en equipo",
+                                  "Toma de desiciones",
+                                  "Adaptabilidad",
+                                  "Comunicación")
+            img.rel-img(src="/images/olki.svg" data-aos="zoom-in" data-aos-duration="3000")
+            .container_abilities(data-aos="fade-up"
+                                 data-aos-easing="linear"
+                                 data-aos-duration="1500")
+              +objetives_abilities("Habilidades Duras",
+                                    "/images/hardSkills.svg",
+                                    "Lenguajes de programación",
+                                    "Lógica matemática",
+                                    "Proyectos STEAM",
+                                    "Aprendizaje integral",
+                                    "y significativo")
+            img.rel-img(src="/images/olp.svg" data-aos="zoom-in" data-aos-duration="3000")
       section 
         .container_benefits
           .benefits_section
@@ -118,9 +139,11 @@ block content
               .info_docent-text
                 p.docent-text Formamos a docentes en el uso de TIC para el aula y en metodologías STEAM
               .info_docent-button
-                button.docent-button.steam_button Unirme a una sesión informativa
+                button.docent-button.steam_button 
+                  span  unirme a una sesiòn informativa
+                  .liquid
             .container_footer
-              .container_docent_img
+              .container_docent_img(data-aos="fade-left")
                   img(src="/images/docent.svg")
-              
+    
 

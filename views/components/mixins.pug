@@ -1,5 +1,5 @@
 mixin abilities (img,tittle,text)
-  .abilities-images
+  .abilities-images(data-aos="zoom-in")
     .container_img
       img.abilitie-img(src=""+img)
     .continer_tittle 
@@ -47,7 +47,6 @@ mixin objetives_abilities (tittle, img1, el1,el2,el3,el4,el5, img2)
           li=el3
           li=el4
           li=el5
-  img.rel-img(src=""+img2)
 
 mixin benefits-box (img, text)
   .Benefits-box
